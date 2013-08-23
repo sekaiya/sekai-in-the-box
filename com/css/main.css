@@ -1,0 +1,69 @@
+body {
+	background-color: #00bfff;
+} 
+
+
+.titlefont {
+	font-family: rammetto-one;
+	font-size: 60px;
+	color:#00617f;
+}
+.menufont {
+	font-family: concert-one;
+	font-size: 45px;
+	color:#00617f;
+}
+.animefont {
+    filter:alpha(opacity=01);
+    -moz-opacity: 0.01;
+    opacity: 0.01;
+
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+	font-size: 45px;
+}
+
+
+li{
+	list-style-type:none;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.submenu{
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+.subs li{
+	margin-bottom: 10px;
+}
+#title {
+	margin-top:100px;
+	margin-left:60px;
+	float:left;
+}
+
+#menus {
+    padding-top: 5px;  
+	margin-left:650px;
+}
+
+.contents {
+	margin-top:20px;
+    	padding-top: 30px;  
+    	padding-left: 10px; 
+    	padding-right: 10px;  
+	width: 650px;
+	height: 450px;
+	#background-color: #F9FAFF;
+	float:left;
+	overflow: auto; 
+}
+.contentsfont {
+    	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+	color: #050060;
+}
+.iseer {
+	margin-top:40px;
+	margin-left:10px;
+}
+

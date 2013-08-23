@@ -1,0 +1,13 @@
+application: sekai-in-the-box
+version: 1
+runtime: php
+api_version: 1
+
+handlers:
+- url: /
+  static_files: com/index.html
+  upload: com/index.html
+  
+- url: /(.*)
+  static_files: com/\1
+  upload: com/(.*)
