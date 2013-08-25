@@ -44,5 +44,8 @@
 
 <div class="kikite">-- 完璧じゃないことの自己申告ですか？</div><div class="yokonisyashin">
    私がかんぺきじゃないことは、それこそ周りの人のほうが
-   よく知っているとは思うんですけどね（笑）。</div>　　　　　<img src ="img/no1-3.jpg"/ width ="100px">
+   よく知っているとは思うんですけどね（笑）。</div>
+
+
+
 
