@@ -21,7 +21,9 @@ body {
 	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
 	font-size: 45px;
 }
-
+#anime1, #anime2 {
+	width: 500px;
+}
 
 li{
 	list-style-type:none;
@@ -47,7 +49,7 @@ li{
 	margin-left:650px;
 }
 
-.contents {
+#contents {
 	margin-top:20px;
     	padding-top: 30px;  
     	padding-left: 10px; 

@@ -1,3 +1,5 @@
+var left = ($(window).width()-500)/2
+
 jQuery(document).ready(
 	function() {
 		var dfd = $.Deferred();
@@ -21,7 +23,7 @@ jQuery(document).ready(
 		).then(
 			function(){
 				return $("#anime1").animate(
-					{marginLeft: "250px",
+					{marginLeft: left + "px",
 					 marginTop: "250px",
 					 opacity: 1}, 500, 'swing'
 				)
@@ -41,6 +43,7 @@ jQuery(document).ready(
 			function(){
 				 return jQuery.Deferred(function(dfd) {
 					setTimeout(function() {
+						$("#anime1").remove();
 						$("#anime2").show();
 						dfd.resolve();
 					}, 1300);
@@ -51,7 +54,7 @@ jQuery(document).ready(
 				 return jQuery.Deferred(function(dfd) {
 					setTimeout(function() {
 						 $("#anime2").animate(
-							{marginLeft: "250px",
+							{marginLeft: left + "px",
 							 marginTop: "250px",
 					 		 opacity: 1}, 500, 'swing'
 						)
@@ -72,14 +75,11 @@ jQuery(document).ready(
 			function(){
 				 return jQuery.Deferred(function(dfd) {
 					setTimeout(function() {
+						$("#anime2").remove();
 						$("body").css("background-color", "#00bfff");
 						dfd.resolve();
 					}, 800);
 				});
-			}
-		).then(
-			function(){
-				return $(".anime").remove();
 			}
 		).then(
 			function(){
@@ -92,8 +92,6 @@ jQuery(document).ready(
 			}
 		);
 		dfd.resolve();
-
-		
 	}
 );
 

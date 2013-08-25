@@ -20,8 +20,5 @@ WebアプリフレームワークのUnitTestを作りました。
 technical
 使用言語：　PHP
 
-source
-https://github.com/sekaiya/perfect-php
-
 ※パーフェクトPHP
 <a href="http://iena-korakuen.appspot.com" target="_blank">http://iena-korakuen.appspot.com</a>
