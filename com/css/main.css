@@ -46,15 +46,16 @@ li{
 
 #menus {
     padding-top: 5px;  
-	margin-left:650px;
+	margin-left:680px;
 }
 
 #contents {
 	margin-top:20px;
-    	padding-top: 30px;  
-    	padding-left: 10px; 
-    	padding-right: 10px;  
-	width: 650px;
+	margin-left:22px;
+    padding-top: 30px;  
+    padding-left: 10px; 
+    padding-right: 10px;  
+	width: 660px;
 	height: 450px;
 	#background-color: #F9FAFF;
 	float:left;
