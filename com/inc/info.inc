@@ -1,5 +1,5 @@
-お知らせ
+<div class="content_title">info</div>
 
-おやつの食べすぎでおなかいっぱいです
+2013/8/25 開始
 
 

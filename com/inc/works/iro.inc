@@ -1,4 +1,4 @@
-色のいろいろ
+<div class="content_title">iro-no-iroiro</div>
 
 <a href="http://sekai.hateblo.jp/entry/2013/07/30/192711p" target="_blank">http://sekai.hateblo.jp/entry/2013/07/30/192711</a>
 

@@ -1,5 +1,4 @@
-
-IENA - 近所のパン屋さんのHP
+<div class="content_title">IENA</div>
 
 　　<img src="img/iena.jpg" width="200px"/>
 

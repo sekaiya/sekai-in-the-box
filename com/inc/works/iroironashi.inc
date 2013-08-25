@@ -1,4 +1,4 @@
-Twitter Bot @iroironashi
+<div class="content_title">Twitter Bot @iroironashi</div>
 
 　<img src="img/iroironashi.jpg" width="360px"/>
 

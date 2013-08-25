@@ -1,12 +1,10 @@
 body {
 	background-color: #00bfff;
 } 
-
-
 .titlefont {
 	font-family: rammetto-one;
 	font-size: 60px;
-	color:#00617f;
+	color:#ffffff;
 }
 .menufont {
 	font-family: concert-one;
@@ -20,6 +18,9 @@ body {
 
 	font-family: "ÉqÉâÉMÉmäpÉS Pro W3", "Hiragino Kaku Gothic Pro", "ÉÅÉCÉäÉI", Meiryo, Osaka, "ÇlÇr ÇoÉSÉVÉbÉN", "MS PGothic", sans-serif;
 	font-size: 45px;
+}
+.subtitle {
+	font-size: 20px;
 }
 #anime1, #anime2 {
 	width: 500px;
@@ -35,6 +36,11 @@ li{
 	font-size: 30px;
 	margin-bottom: 15px;
 }
+
+.content_title{
+	font-family: concert-one;
+	font-size: 30px;
+}
 .subs li{
 	margin-bottom: 10px;
 }
@@ -47,19 +53,29 @@ li{
 #menus {
     padding-top: 5px;  
 	margin-left:680px;
+	width: 235px
+	
 }
 
 #contents {
 	margin-top:20px;
 	margin-left:22px;
     padding-top: 30px;  
-    padding-left: 10px; 
+    padding-left: 20px; 
     padding-right: 10px;  
 	width: 660px;
 	height: 450px;
-	#background-color: #F9FAFF;
+	background-color: #00bfff;
 	float:left;
 	overflow: auto; 
+	
+    -moz-border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -khtml-border-radius: 24px; 
+    border-radius: 24px;
+	
+	
+	
 }
 .contentsfont {
     	font-family: "ÉqÉâÉMÉmäpÉS Pro W3", "Hiragino Kaku Gothic Pro", "ÉÅÉCÉäÉI", Meiryo, Osaka, "ÇlÇr ÇoÉSÉVÉbÉN", "MS PGothic", sans-serif;
@@ -69,4 +85,12 @@ li{
 	margin-top:40px;
 	margin-left:10px;
 }
-
+.shirotest {
+	color: #ffffff;
+}
+.hibi {
+	position: absolute;
+	top: 100px;
+	width:250px;
+	z-index: -1;
+}
