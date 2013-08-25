@@ -52,8 +52,7 @@ li{
 
 #menus {
     padding-top: 5px;  
-	margin-left:680px;
-	width: 235px
+	margin-left:695px;
 	
 }
 
@@ -93,4 +92,20 @@ li{
 	top: 100px;
 	width:250px;
 	z-index: -1;
+}
+.inter_title {
+	width: 450px;
+	float:left;
+	font-size: 30px;
+
+}
+.kikite {
+	color: #daa520;
+}
+.inter_photo {
+	width: 100px;
+	float:left;
+}
+.yokonisyashin {
+	float:left;
 }

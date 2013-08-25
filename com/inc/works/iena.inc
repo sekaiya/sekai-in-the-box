@@ -7,7 +7,6 @@ URL
 <a href="http://iena-korakuen.appspot.com" target="_blank">http://iena-korakuen.appspot.com</a>
 
 
-
 思い
 近所にあるお気に入りのパン屋のHPを作成しました。
 インタビュー時の言葉「私たちはおいしいパンを焼くのが本業」を大切に、

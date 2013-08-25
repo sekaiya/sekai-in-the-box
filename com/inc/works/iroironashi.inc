@@ -19,12 +19,9 @@ technical
 稼働環境：　Google App Engine
 特徴：ossのtwitteroauth.phpの拡張
 　⇒curlが使用できないGAE環境でも使用可能に。
-　この拡張は現在GitHub上で申請です(※)
 
 source
 <a href="https://github.com/sekaiya/iroironashi" target="_blank">https://github.com/sekaiya/iroironashi</a>
 
 
-
-※
 

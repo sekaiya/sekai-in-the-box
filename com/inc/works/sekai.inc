@@ -1,5 +1,4 @@
 <div class="content_title">Hello Sekai!</div>
-
 記事は<a href="iseer.html" target="_blank">こちら</a>
 
 思い
