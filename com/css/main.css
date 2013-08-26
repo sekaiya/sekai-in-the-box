@@ -50,7 +50,6 @@ li{
 #menus {
     padding-top: 5px;  
 	margin-left:695px;
-	
 }
 
 #contents {
@@ -60,7 +59,6 @@ li{
     padding-left: 20px; 
     padding-right: 10px;  
 	width: 660px;
-	height: 450px;
 	background-color: #00bfff;
 	float:left;
 	overflow: auto; 
@@ -69,9 +67,6 @@ li{
     -webkit-border-radius: 24px;
     -khtml-border-radius: 24px; 
     border-radius: 24px;
-	
-	
-	
 }
 .contentsfont {
     	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;

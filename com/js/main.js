@@ -1,11 +1,11 @@
 jQuery(document).ready(function() {
-
 	var hibi_left = $(window).width();
 	var hibi_top = $(window).height();
 
 	$(".hibi").css("left", hibi_left - 250 + "px");
 	$(".hibi").css("top", hibi_top - 130 + "px");
-
+	
+	
 	$("#menus > ul > li, #menus > ul > ul > *").click(function(){
 	
 		if ($("#title").length != 0) { $("#title").remove(); }
@@ -42,7 +42,9 @@ make_content = function(pagename){
 	$("#contents").hide();
 	$("#contents").css("background-color", "#ffffff");
 	
+	$("#contents").css("height", "");
 	$("#contents").load("inc/" + pagename + ".inc");
-	$("#contents").toggle("slow");
-	$("#contents").animate({ scrollTop: 0 }, 'fast');
+	$("#contents").toggle("slow", function(){
+		if($("#contents").height() < 450) { $("#contents").height(450) }
+});
 }
