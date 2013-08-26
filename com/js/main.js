@@ -4,8 +4,8 @@ jQuery(document).ready(function() {
 
 	$(".hibi").css("left", hibi_left - 250 + "px");
 	$(".hibi").css("top", hibi_top - 130 + "px");
-	
-	
+
+
 	$("#menus > ul > li, #menus > ul > ul > *").click(function(){
 	
 		if ($("#title").length != 0) { $("#title").remove(); }
