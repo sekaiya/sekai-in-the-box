@@ -62,6 +62,7 @@ li{
 	background-color: #00bfff;
 	float:left;
 	overflow: auto; 
+	word-wrap: break-word;
 	
     -moz-border-radius: 24px;
     -webkit-border-radius: 24px;
