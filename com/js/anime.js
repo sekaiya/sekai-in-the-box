@@ -1,4 +1,5 @@
-var left = ($(window).width()-500)/2
+var left_a = ($(window).width()-500)/2
+var top_a = ($(window).height()-120)/2
 
 jQuery(document).ready(
 	function() {
@@ -23,8 +24,8 @@ jQuery(document).ready(
 		).then(
 			function(){
 				return $("#anime1").animate(
-					{marginLeft: left + "px",
-					 marginTop: "250px",
+					{marginLeft: left_a + "px",
+					 marginTop: top_a + "px",
 					 opacity: 1}, 500, 'swing'
 				)
 			}
@@ -54,8 +55,8 @@ jQuery(document).ready(
 				 return jQuery.Deferred(function(dfd) {
 					setTimeout(function() {
 						 $("#anime2").animate(
-							{marginLeft: left + "px",
-							 marginTop: "250px",
+							{marginLeft: left_a + "px",
+							 marginTop: top_a + "px",
 					 		 opacity: 1}, 500, 'swing'
 						)
 						dfd.resolve();
