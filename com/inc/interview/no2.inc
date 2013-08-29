@@ -74,11 +74,11 @@
     たった一人に「このサイトいいと思うよ」って言われたら、
     それでもう十分報われますから。
 
- <div class="yokonisyashin"><div class="kikite">-- どんどんネガティブに･･･（笑）。
-    でも私、いいと思いますよ、このサイト。</div></div><div>　　　　　<img src ="img/no2-2.jpg"/ width ="200px"></div>    あはは。もう報われちゃった（笑）。
+<div class="kikite">-- どんどんネガティブに･･･（笑）。
+    でも私、いいと思いますよ、このサイト。</div>
+    
+    あはは。もう報われちゃった（笑）。
 
 
 
-
-
-
+  <img src ="img/no2-3.jpg"/ width ="300px">
