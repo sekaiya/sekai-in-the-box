@@ -33,18 +33,42 @@ jQuery(document).ready(function() {
 	});
 	
 });
-
-rgbTo16 = function(col){
-  return "#" + col.match(/\d+/g).map(function(a){return ("0" + parseInt(a).toString(16)).slice(-2)}).join("");
-}
 make_content = function(pagename){
 
 	$("#contents").hide();
 	$("#contents").css("background-color", "#ffffff");
 	
 	$("#contents").css("height", "");
-	$("#contents").load("inc/" + pagename + ".inc");
+	if(pagename == "info") {
+		_make_info_page();
+	} else {
+		$("#contents").load("inc/" + pagename + ".inc");
+	}
 	$("#contents").toggle("slow", function(){
 		if($("#contents").height() < 450) { $("#contents").height(450) }
-});
+	});
+}
+
+_make_info_page = function() {
+	$.getJSON("https://api.github.com/repos/sekaiya/sekai-in-the-box/commits", function(res){
+		datas = new Array();
+		for (var i=0 ; i < res.length ; i++){
+			var data = new Data(res[i].commit.author.date, res[i].commit.message, res[i].html_url);
+			datas.push(data);
+		};
+		$("#contents").load("inc/info.inc", function(){
+			changed = $.tmpl($("#contents"), [{contents: datas}]);
+			$("#contents").html(changed);
+		});
+	});
+}
+
+var Data = function(date, comment, url) {
+  this.date = date;
+  this.comment = comment;
+  this.url = url;
+}
+
+rgbTo16 = function(col){
+  return "#" + col.match(/\d+/g).map(function(a){return ("0" + parseInt(a).toString(16)).slice(-2)}).join("");
 }
