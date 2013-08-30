@@ -52,7 +52,7 @@ _make_content = function(pagename){
 _make_info_page = function() {
 	$.getJSON("https://api.github.com/repos/sekaiya/sekai-in-the-box/commits", function(res){
 		datas = new Array();
-		for (var i=0 ; i < res.length ; i++){
+		for (var i=0 ; i < 5 ; i++){
 			var data = new Data(res[i].commit.author.date, res[i].commit.message, res[i].html_url);
 			datas.push(data);
 		};
