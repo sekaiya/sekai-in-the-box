@@ -10,12 +10,12 @@ jQuery(document).ready(function() {
 	
 		if ($("#title").length != 0) { $("#title").remove(); }
 		
-		if(rgbTo16($(this).css("color")) == "#ffffff") { return; }
+		if(_rgbTo16($(this).css("color")) == "#ffffff") { return; }
 		
 		$("#menus > ul > li, #menus > ul > ul > *").css("color", "#00617f");
 		$(this).css("color", "#ffffff");
 		
-		make_content($(this).attr("id"));
+		_make_content($(this).attr("id"));
 	});
 	
 	$("#menus > ul > li").click(function(){
@@ -33,7 +33,7 @@ jQuery(document).ready(function() {
 	});
 	
 });
-make_content = function(pagename){
+_make_content = function(pagename){
 
 	$("#contents").hide();
 	$("#contents").css("background-color", "#ffffff");
@@ -69,6 +69,6 @@ var Data = function(date, comment, url) {
   this.url = url;
 }
 
-rgbTo16 = function(col){
+_rgbTo16 = function(col){
   return "#" + col.match(/\d+/g).map(function(a){return ("0" + parseInt(a).toString(16)).slice(-2)}).join("");
 }
