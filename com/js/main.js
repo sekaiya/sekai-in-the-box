@@ -2,7 +2,7 @@ jQuery(document).ready(function() {
 	var hibi_left = $(window).width();
 	var hibi_top = $(window).height();
 
-	$(".hibi").css("left", hibi_left - 250 + "px");
+	$(".hibi").css("left", hibi_left - 230 + "px");
 	$(".hibi").css("top", hibi_top - 130 + "px");
 
 

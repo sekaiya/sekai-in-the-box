@@ -82,8 +82,6 @@ body {
 }
 .hibi {
 	position: absolute;
-	top: 100px;
-	width:250px;
 	z-index: -1;
 }
 .inter_title {
