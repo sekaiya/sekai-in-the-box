@@ -11,7 +11,7 @@ jQuery(document).ready(function() {
 		if ($("#title").length != 0) { $("#title").remove(); }
 		
 		if(_rgbTo16($(this).css("color")) == "#ffffff") { return; }
-		
+		$('html,body').animate({ scrollTop: 0 }, 'fast');
 		$("#menus > ul > li, #menus > ul > ul > *").css("color", "#00617f");
 		$(this).css("color", "#ffffff");
 		
