@@ -7,10 +7,8 @@ jQuery(document).ready(function() {
 
 
 	$("#menus > ul > li, #menus > ul > ul > *").click(function(){
-	
-		if ($("#title").length != 0) { $("#title").remove(); }
-		
-		if(_rgbTo16($(this).css("color")) == "#ffffff") { return; }
+		if($(this).css("color") == "rgb(255, 255, 255)") { return; }
+
 		$('html,body').animate({ scrollTop: 0 }, 'fast');
 		$("#menus > ul > li, #menus > ul > ul > *").css("color", "#00617f");
 		$(this).css("color", "#ffffff");
@@ -34,7 +32,6 @@ jQuery(document).ready(function() {
 	
 });
 _make_content = function(pagename){
-
 	$("#contents").hide();
 	$("#contents").css("background-color", "#ffffff");
 	
@@ -67,8 +64,4 @@ var Data = function(date, comment, url) {
   this.date = date;
   this.comment = comment;
   this.url = url;
-}
-
-_rgbTo16 = function(col){
-  return "#" + col.match(/\d+/g).map(function(a){return ("0" + parseInt(a).toString(16)).slice(-2)}).join("");
 }
