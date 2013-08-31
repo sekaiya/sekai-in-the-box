@@ -33,16 +33,14 @@ jQuery(document).ready(function() {
 });
 _make_content = function(pagename){
 	$("#contents").hide();
-	$("#contents").css("background-color", "#ffffff");
-	
 	$("#contents").css("height", "");
 	if(pagename == "info") {
 		_make_info_page();
 	} else {
 		$("#contents").load("inc/" + pagename + ".inc");
 	}
-	$("#contents").toggle("slow", function(){
-		if($("#contents").height() < 450) { $("#contents").height(450) }
+	$("#contents").show("slow", function(){
+		if($("#contents").height() < 430) { $("#contents").height(430) }
 	});
 }
 

@@ -16,7 +16,7 @@ body {
     -moz-opacity: 0.01;
     opacity: 0.01;
 
-	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+	font-family: "ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ Pro W3", "Hiragino Kaku Gothic Pro", "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, Osaka, "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", "MS PGothic", sans-serif;
 	font-size: 45px;
 }
 .subtitle {
@@ -42,35 +42,43 @@ body {
 	margin-bottom: 10px;
 }
 #title {
-	margin-top:100px;
-	margin-left:60px;
-	float:left;
+	padding-top:95px;
+	padding-bottom:130px;
+	width: 650px;
+	color:#00617f;
+	background-color: #00bfff;
+	
+	-moz-border-radius: 24px;
+	-webkit-border-radius: 24px;
+	-khtml-border-radius: 24px;
+	border-radius: 24px;
 }
 
 #menus {
-    padding-top: 5px;  
+	padding-top: 5px;
 	margin-left:695px;
 }
 
 #contents {
 	margin-top:20px;
 	margin-left:22px;
-    padding-top: 30px;  
-    padding-left: 20px; 
-    padding-right: 10px;  
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
 	width: 660px;
-	background-color: #00bfff;
+	background-color: #ffffff;
 	float:left;
-	overflow: auto; 
+	overflow: auto;
 	word-wrap: break-word;
 	
-    -moz-border-radius: 24px;
-    -webkit-border-radius: 24px;
-    -khtml-border-radius: 24px; 
-    border-radius: 24px;
+	-moz-border-radius: 24px;
+	-webkit-border-radius: 24px;
+	-khtml-border-radius: 24px;
+	border-radius: 24px;
 }
 .contentsfont {
-    	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒƒCƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+    	font-family: "ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ Pro W3", "Hiragino Kaku Gothic Pro", "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, Osaka, "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", "MS PGothic", sans-serif;
 	color: #050060;
 }
 .second_page {
