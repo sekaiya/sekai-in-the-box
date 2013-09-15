@@ -12,12 +12,10 @@ body {
 	color:#00617f;
 }
 .animefont {
-    filter:alpha(opacity=01);
-    -moz-opacity: 0.01;
-    opacity: 0.01;
-
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-	font-size: 45px;
+	-moz-opacity: 0;
+	-webkit-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
 }
 .subtitle {
 	font-size: 20px;
