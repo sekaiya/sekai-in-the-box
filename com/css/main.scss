@@ -1,0 +1,100 @@
+@mixin css3($property, $value) {
+	@each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+		#{$prefix}#{$property}: $value;
+	}
+}
+body {
+	background-color: #00bfff;
+} 
+.titlefont {
+	font-family: rammetto-one;
+	font-size: 60px;
+	color:#ffffff;
+}
+.menufont {
+	font-family: concert-one;
+	font-size: 45px;
+	color:#00617f;
+}
+.animefont {
+	@include css3(opacity, 0);
+}
+.subtitle {
+	font-size: 20px;
+}
+
+#menus li{
+	list-style-type:none;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.submenu{
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+.content_title{
+	font-family: concert-one;
+	font-size: 30px;
+}
+.subs li{
+	margin-bottom: 10px;
+}
+#title {
+	padding-left:20px;
+	padding-top:95px;
+	padding-bottom:130px;
+	width: 630px;
+	color:#00617f;
+	background-color: #00bfff;
+	@include css3(border-radius, 24px);
+}
+
+#menus {
+	padding-top: 5px;
+	margin-left:695px;
+}
+
+#contents {
+	margin-top:20px;
+	margin-left:22px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	width: 660px;
+	background-color: #ffffff;
+	float:left;
+	overflow: auto;
+	word-wrap: break-word;
+	@include css3(border-radius, 24px);
+}
+.contentsfont {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #050060;
+}
+.second_page {
+	margin-top:40px;
+	margin-left:20px;
+}
+.hibi {
+	position: absolute;
+	z-index: -1;
+}
+.inter_title {
+	width: 450px;
+	float:left;
+	font-size: 30px;
+
+}
+.kikite {
+	color: #daa520;
+}
+.inter_photo {
+	width: 100px;
+	float:left;
+}
+.yokonisyashin {
+	float:left;
+}
