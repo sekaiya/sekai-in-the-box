@@ -46,19 +46,19 @@ _make_content = function(pagename){
 
 _make_history_page = function() {
 	$.getJSON("https://api.github.com/repos/sekaiya/sekai-in-the-box/commits", function(res){
-		datas = new Array();
+		histories = new Array();
 		for (var i=0 ; i < 5 ; i++){
-			var data = new Data(res[i].commit.author.date, res[i].commit.message, res[i].html_url);
-			datas.push(data);
+			var commit_info = new CommitInfo(new Date(res[i].commit.author.date).toLocaleString(), res[i].commit.message, res[i].html_url);
+			histories.push(commit_info);
 		};
 		$("#contents").load("inc/history.inc", function(){
-			changed = $.tmpl($("#contents"), [{contents: datas}]);
-			$("#contents").html(changed);
+			new_histories = $.tmpl($("#contents"), [{contents: histories}]);
+			$("#contents").html(new_histories);
 		});
 	});
 }
 
-var Data = function(date, comment, url) {
+var CommitInfo = function(date, comment, url) {
   this.date = date;
   this.comment = comment;
   this.url = url;
