@@ -1,7 +1,6 @@
 <div class="content_title">IENA</div>
 
-　　<img src="img/iena.jpg" width="200px"/>
-
+<img src="img/iena.jpg" width="200px"/>
 
 URL
 <a href="http://iena-korakuen.appspot.com" target="_blank">http://iena-korakuen.appspot.com</a>
