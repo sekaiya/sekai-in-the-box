@@ -34,8 +34,8 @@ jQuery(document).ready(function() {
 _make_content = function(pagename){
 	$("#contents").hide();
 	$("#contents").css("height", "");
-	if(pagename == "info") {
-		_make_info_page();
+	if(pagename == "history") {
+		_make_history_page();
 	} else {
 		$("#contents").load("inc/" + pagename + ".inc");
 	}
@@ -44,14 +44,14 @@ _make_content = function(pagename){
 	});
 }
 
-_make_info_page = function() {
+_make_history_page = function() {
 	$.getJSON("https://api.github.com/repos/sekaiya/sekai-in-the-box/commits", function(res){
 		datas = new Array();
 		for (var i=0 ; i < 5 ; i++){
 			var data = new Data(res[i].commit.author.date, res[i].commit.message, res[i].html_url);
 			datas.push(data);
 		};
-		$("#contents").load("inc/info.inc", function(){
+		$("#contents").load("inc/history.inc", function(){
 			changed = $.tmpl($("#contents"), [{contents: datas}]);
 			$("#contents").html(changed);
 		});

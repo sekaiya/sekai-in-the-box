@@ -1,5 +1,5 @@
 
-<div class="content_title">info</div>
+<div class="content_title">history</div>
 -- under contructing --
 {{each contents}}
 <ul>
