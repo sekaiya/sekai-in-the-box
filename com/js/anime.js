@@ -86,7 +86,7 @@ jQuery(document).ready(
 			function(){
 				 return jQuery.Deferred(function(dfd) {
 					setTimeout(function() {
-						$(".notanime").show(3000)
+						$(".notanime").fadeIn(3000)
 						dfd.resolve();
 					});
 				});
