@@ -5,7 +5,6 @@ jQuery(document).ready(function() {
 	$(".hibi").css("left", hibi_left - 230 + "px");
 	$(".hibi").css("top", hibi_top - 130 + "px");
 
-
 	$("#menus > ul > li, #menus > ul > ul > *").click(function(){
 		if($(this).css("color") == "rgb(255, 255, 255)") { return; }
 
@@ -45,15 +44,15 @@ _make_content = function(pagename){
 }
 
 _make_history_page = function() {
-	$.getJSON("https://api.github.com/repos/sekaiya/sekai-in-the-box/commits", function(res){
+	$("#contents").height(590)
+	$.getJSON("https://api.github.com/repos/sekaiya/sekai-in-the-box/commits?per_page=5", function(res){
 		histories = new Array();
-		for (var i=0 ; i < 5 ; i++){
+		for (var i=0 ; i < res.length ; i++){
 			var commit_info = new CommitInfo(new Date(res[i].commit.author.date).toLocaleString(), res[i].commit.message, res[i].html_url);
 			histories.push(commit_info);
 		};
 		$("#contents").load("inc/history.inc", function(){
-			new_histories = $.tmpl($("#contents"), [{contents: histories}]);
-			$("#contents").html(new_histories);
+			$("#contents").html($.tmpl($("#contents"), [{contents: histories}]));
 		});
 	});
 }
