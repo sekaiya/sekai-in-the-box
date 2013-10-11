@@ -46,7 +46,6 @@ _make_content = function(pagename){
 }
 
 _make_history_page = function() {
-	$("#contents").height(590)
 	$("#contents").load("inc/history.inc", function(){
 		$("#contents").html($.tmpl($("#contents"), [{contents: histories}]));
 	});
