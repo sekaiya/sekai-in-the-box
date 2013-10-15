@@ -2,8 +2,8 @@ jQuery(document).ready(function() {
 	var hibi_left = $(window).width();
 	var hibi_top = $(window).height();
 
-	$(".hibi").css("left", hibi_left - 230 + "px");
-	$(".hibi").css("top", hibi_top - 130 + "px");
+	$(".hibi").css("left", hibi_left - 220 + "px");
+	$(".hibi").css("top", hibi_top - 100 + "px");
 	$("#menus > ul > li, #menus > ul > ul > *").click(function(){
 		if($(this).css("color") == "rgb(255, 255, 255)") { return; }
 		$('html,body').animate({ scrollTop: 0 }, 'fast');
