@@ -4,6 +4,10 @@ runtime: php
 api_version: 1
 
 handlers:
+- url: /favicon.ico
+  static_files: static/images/favicon.ico
+  upload: com/img/favicon.ico
+
 - url: /
   static_files: com/index.html
   upload: com/index.html
