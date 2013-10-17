@@ -1,6 +1,21 @@
 var left_a = ($(window).width()-500)/2
 var top_a = ($(window).height()-120)/2
 
+anime1_left = function() {
+	$("#anime1").animate(
+			{marginLeft: "-500px",opacity: 0}, 500
+		);
+}
+
+anime = function(event, time) {
+ return jQuery.Deferred(function(dfd) {
+		setTimeout(function() {
+		event();
+		dfd.resolve();
+	}, time);
+	});
+}
+
 jQuery(document).ready(
 	function() {
 		var dfd = $.Deferred();
@@ -31,14 +46,7 @@ jQuery(document).ready(
 			}
 		).then(
 			function(){
-				 return jQuery.Deferred(function(dfd) {
-					setTimeout(function() {
-						$("#anime1").animate(
-							{marginLeft: "-500px",opacity: 0}, 500
-						);
-						dfd.resolve();
-					}, 1000);
-				});
+				 return anime(anime1_left, 1000);
 			}
 		).then(
 			function(){
