@@ -26,8 +26,9 @@ anime = function(event, time,node) {
 }
 jQuery(document).ready(
 	function() {
+		$(".notanime").hide();
 		$("body").css("background-color", "#ffffff");
-		anime(not_anime_hide, 0);
+		$("#loadingWrap").remove();
 		var dfd = $.Deferred();
 		dfd.then(
 			function(){return anime(show, 1000, "#anime1");}
