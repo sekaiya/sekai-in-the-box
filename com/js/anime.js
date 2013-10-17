@@ -26,12 +26,10 @@ anime = function(event, time,node) {
 }
 jQuery(document).ready(
 	function() {
+		$("body").css("background-color", "#ffffff");
+		anime(not_anime_hide, 0);
 		var dfd = $.Deferred();
 		dfd.then(
-			function(){return $("body").css("background-color", "#ffffff");}
-		).then(
-			function(){return anime(not_anime_hide, 0);}
-		).then(
 			function(){return anime(show, 1000, "#anime1");}
 		).then(
 			function(){return anime(slide, 0, "#anime1");}
