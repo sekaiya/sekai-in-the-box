@@ -28,7 +28,7 @@ jQuery(document).ready(
 	function() {
 		var dfd = $.Deferred();
 		dfd.then(
-			function(){return anime(backcolor_blue, 0, "#ffffff");}
+			function(){return $("body").css("background-color", "#ffffff");}
 		).then(
 			function(){return anime(not_anime_hide, 0);}
 		).then(
