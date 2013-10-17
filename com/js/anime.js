@@ -8,7 +8,7 @@ hide =  function(node){$(node).hide();}
 backcolor_blue = function(color){$("body").css("background-color", color);}
 fade_in = function(){$(".notanime").fadeIn(3000);}
 left = function() {
-	$("#anime1").animate({marginLeft: "-500px",opacity: 0}, 300);
+	$("#anime1").animate({marginLeft: "-500px",opacity: 0}, 400);
 }
 slide = function(node){
 	$(node).animate(
@@ -44,7 +44,7 @@ jQuery(document).ready(
 		).then(
 			function(){return anime(slide, 0, "#anime2");}
 		).then(
-			function(){return anime(hide, 2200, "#anime2");}
+			function(){return anime(hide, 2700, "#anime2");}
 		).then(
 			function(){return anime(remove, 0, "#anime2");}
 		).then(
