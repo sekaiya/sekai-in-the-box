@@ -1,5 +1,5 @@
 application: sekai-in-the-box
-version: 1
+version: dev
 runtime: php
 api_version: 1
 
@@ -8,10 +8,22 @@ handlers:
   static_files: static/images/favicon.ico
   upload: com/img/favicon.ico
 
-- url: /
-  static_files: com/index.html
-  upload: com/index.html
-  
-- url: /(.*)
+- url: /css
+  static_dir: com/css
+
+- url: /js
+  static_dir: com/js
+
+- url: /img
+  static_dir: com/img
+
+- url: /(inc.*)
   static_files: com/\1
   upload: com/(.*)
+  
+- url: /.*
+  script: index.php
+
+- url: /.*
+  static_files: com/index.html
+  upload: com/index.html
