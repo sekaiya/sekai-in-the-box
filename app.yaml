@@ -4,10 +4,22 @@ runtime: php
 api_version: 1
 
 handlers:
-- url: /
-  static_files: com/index.html
-  upload: com/index.html
-  
-- url: /(.*)
+- url: /css
+  static_dir: com/css
+
+- url: /js
+  static_dir: com/js
+
+- url: /img
+  static_dir: com/img
+
+- url: /(inc.*)
   static_files: com/\1
   upload: com/(.*)
+  
+- url: /.*
+  static_files: com/index.html
+  upload: com/index.html
+
+#- url: /.*
+#  script: com/php/init.php
