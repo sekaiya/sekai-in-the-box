@@ -42,7 +42,7 @@
 			<div style="clear:both;"></div>
 		</div>
 	</body>
-	<script src="js/jquery-2.0.3.min.js" type="text/javascript"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
 	<script src="js/anime.js" type="text/javascript"></script>
 	<script src="http://use.edgefonts.net/rammetto-one:n4.js" type="text/javascript"></script>
 	<script src="http://use.edgefonts.net/concert-one:n4.js" type="text/javascript"></script>
