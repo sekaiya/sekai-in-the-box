@@ -17,12 +17,12 @@ handlers:
 - url: /img
   static_dir: com/img
 
-- url: /(inc.*)
-  static_files: com/\1
-  upload: com/(.*)
+- url: /inc/(.*)
+  static_files: com/inc/\1
+  upload: com/inc/(.*)
   
 - url: /.*
-  script: index.php
+  script: com/index.php
 
 - url: /.*
   static_files: com/index.html
