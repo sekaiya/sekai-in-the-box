@@ -2,13 +2,13 @@ var left_a = ($(window).width()-500)/2
 var top_a = ($(window).height()-120)/2
 
 not_anime_hide = function(){$(".notanime").hide();}
-show = function(node){$(node).show();}
-remove = function(node){$(node).remove();}
-hide =  function(node){$(node).hide();}
+show = function(node){node.show();}
+remove = function(node){node.remove();}
+hide =  function(node){node.hide();}
 backcolor_blue = function(color){$("body").css("background-color", color);}
 fade_in = function(){$(".notanime").fadeIn(3000);}
-left = function() {
-	$("#anime1").animate({marginLeft: "-500px",opacity: 0}, 400);
+left = function(node) {
+	node.animate({marginLeft: "-500px",opacity: 0}, 400);
 }
 slide = function(node){
 	$(node).animate(
@@ -29,23 +29,25 @@ jQuery(document).ready(
 		$(".notanime").hide();
 		$("body").css("background-color", "#ffffff");
 		$("#loadingWrap").remove();
+		var no1 = $("#anime1");
+		var no2 = $("#anime2");
 		var dfd = $.Deferred();
 		dfd.then(
-			function(){return anime(show, 1000, "#anime1");}
+			function(){return anime(show, 1000, no1);}
 		).then(
-			function(){return anime(slide, 0, "#anime1");}
+			function(){return anime(slide, 0, no1);}
 		).then(
-			function(){return anime(left, 1500, "#anime1");}
+			function(){return anime(left, 1500, no1);}
 		).then(
-			function(){return anime(remove, 1300, "#anime1");}
+			function(){return anime(remove, 1300, no1);}
 		).then(
-			function(){return anime(show, 0, "#anime2");}
+			function(){return anime(show, 0, no2);}
 		).then(
-			function(){return anime(slide, 0, "#anime2");}
+			function(){return anime(slide, 0, no2);}
 		).then(
-			function(){return anime(hide, 2700, "#anime2");}
+			function(){return anime(hide, 2700, no2);}
 		).then(
-			function(){return anime(remove, 0, "#anime2");}
+			function(){return anime(remove, 0, no2);}
 		).then(
 			function(){return anime(backcolor_blue, 800, "#00bfff");}
 		).then(
