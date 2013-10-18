@@ -16,7 +16,7 @@ slide = function(node){
 		 marginTop: top_a + "px",
 		 opacity: 1}, 500, 'swing');
 }
-anime = function(event, time,node) {
+anime = function(event, time, node) {
  return jQuery.Deferred(function(dfd) {
 		setTimeout(function() {
 		event(node);
