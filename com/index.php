@@ -6,6 +6,7 @@
 		<title>sekai in the box!</title>
 		<link href="css/main.css" rel="stylesheet" type="text/css">
 		<link rel="shortcut icon" href="img/favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Rammetto+One|Concert+One' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<div id="loadingWrap">...loading</div>
@@ -44,8 +45,6 @@
 	</body>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
 	<script src="js/anime.js" type="text/javascript"></script>
-	<script src="http://use.edgefonts.net/rammetto-one:n4.js" type="text/javascript"></script>
-	<script src="http://use.edgefonts.net/concert-one:n4.js" type="text/javascript"></script>
 	<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" type="text/javascript"></script>
 	<script src="js/main.js" type="text/javascript"></script> 
 	<script>

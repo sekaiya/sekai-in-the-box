@@ -8,13 +8,13 @@ body {
 }
 
 .titlefont {
-  font-family: rammetto-one;
+  font-family: 'Rammetto One';
   font-size: 60px;
   color: #ffffff;
 }
 
 .menufont {
-  font-family: concert-one;
+  font-family: 'Concert One';
   font-size: 45px;
   color: #00617f;
 }
@@ -43,7 +43,7 @@ body {
 }
 
 .content_title {
-  font-family: concert-one;
+  font-family: 'Concert One';
   font-size: 30px;
 }
 
@@ -132,7 +132,6 @@ history ul url {
   margin-top: 100px;
 }
 
-
 #loadingWrap {
   width: 100%;
   height: 100%;
@@ -143,4 +142,3 @@ history ul url {
   padding-top: 20%;
   padding-left: 45%;
 }
-
