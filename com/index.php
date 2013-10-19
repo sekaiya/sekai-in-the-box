@@ -9,7 +9,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Rammetto+One|Concert+One' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div id="loadingWrap">...loading</div>
+		<!--<div id="loadingWrap">...loading</div>-->
 		<div class="anime">
 			<div class="animefont" id="anime2"style="display: none"><img src="img/anime2.png"></div>
 			<div class="animefont" id="anime1"style="display: none"><img src="img/anime1.png"></div>
@@ -39,12 +39,12 @@
 					<li id="history">history</li>
 				</ul>
 			</div>
-			<div class="hibi"><img src="img/hibi.png"></div>
+			<div class="sprite" id="hibi"></div>
 			<div style="clear:both;"></div>
 		</div>
 	</body>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
-	<script src="js/anime.js" type="text/javascript"></script>
+	<!-- <script src="js/anime.js" type="text/javascript"></script> loadingわすれない-->
 	<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" type="text/javascript"></script>
 	<script src="js/main.js" type="text/javascript"></script> 
 	<script>

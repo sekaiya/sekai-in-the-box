@@ -2,8 +2,8 @@ jQuery(document).ready(function() {
 	var left = $(window).width();
 	var top = $(window).height();
 
-	$(".hibi").css("left", left - 220 + "px");
-	$(".hibi").css("top", top - 100 + "px");
+	$("#hibi").css("left", left - 220 + "px");
+	$("#hibi").css("top", top - 100 + "px");
 	$("#menus > ul > li, #menus > ul > ul > *").click(function(){
 		if($(this).css("color") == "rgb(255, 255, 255)") { return; }
 		$('html,body').animate({ scrollTop: 0 }, 'fast');

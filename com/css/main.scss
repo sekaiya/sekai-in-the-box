@@ -81,10 +81,6 @@ body {
 	margin-top:40px;
 	margin-left:20px;
 }
-.hibi {
-	position: absolute;
-	z-index: -1;
-}
 .inter_title {
 	width: 450px;
 	float:left;
@@ -121,3 +117,14 @@ history {
   padding-top: 20%;
   padding-left: 45%;
 }
+.sprite {
+	background: url('../img/anime.png') no-repeat top left;
+}
+.anime1{ background-position: 0 0; width: 475px; height: 67px; } 
+.anime2{ background-position: 0 -68px; width: 485px; height: 63px; } 
+#hibi{
+	background-position: 0 -132px;
+	width: 220px;
+	height: 94px;
+	position: absolute;
+	z-index: -1; } 
