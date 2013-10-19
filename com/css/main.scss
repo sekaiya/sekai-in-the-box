@@ -19,9 +19,6 @@ body {
 	font-size: 45px;
 	color:#00617f;
 }
-.animefont {
-	@include css3(opacity, 0);
-}
 .subtitle {
 	font-size: 20px;
 }
@@ -120,8 +117,8 @@ history {
 .sprite {
 	background: url('../img/anime.png') no-repeat top left;
 }
-.anime1{ background-position: 0 0; width: 475px; height: 67px; } 
-.anime2{ background-position: 0 -68px; width: 485px; height: 63px; } 
+#anime1{ @include css3(opacity, 0); background-position: 0 0; width: 475px; height: 67px; } 
+#anime2{ @include css3(opacity, 0); background-position: 0 -68px; width: 485px; height: 63px; } 
 #hibi{
 	background-position: 0 -132px;
 	width: 220px;

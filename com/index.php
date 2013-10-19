@@ -9,10 +9,10 @@
 		<link href='http://fonts.googleapis.com/css?family=Rammetto+One|Concert+One' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<!--<div id="loadingWrap">...loading</div>-->
+		<div id="loadingWrap">...loading</div>
 		<div class="anime">
-			<div class="animefont" id="anime2"style="display: none"><img src="img/anime2.png"></div>
-			<div class="animefont" id="anime1"style="display: none"><img src="img/anime1.png"></div>
+			<div class="sprite" id="anime2"style="display: none"></div>
+			<div class="sprite" id="anime1"style="display: none"></div>
 		</div>
 		<div class="notanime">
 			<pre><div class="contentsfont" id="contents"><div class="titlefont" id="title">Sekai<br>In-The-Box !</div></div></pre>
@@ -44,7 +44,7 @@
 		</div>
 	</body>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
-	<!-- <script src="js/anime.js" type="text/javascript"></script> loadingわすれない-->
+	<script src="js/anime.js" type="text/javascript"></script>
 	<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" type="text/javascript"></script>
 	<script src="js/main.js" type="text/javascript"></script> 
 	<script>

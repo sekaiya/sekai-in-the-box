@@ -19,14 +19,6 @@ body {
   color: #00617f;
 }
 
-.animefont {
-  -webkit-opacity: 0;
-  -moz-opacity: 0;
-  -ms-opacity: 0;
-  -o-opacity: 0;
-  opacity: 0;
-}
-
 .subtitle {
   font-size: 20px;
 }
@@ -142,13 +134,23 @@ history ul url {
   background: url("../img/anime.png") no-repeat top left;
 }
 
-.anime1 {
+#anime1 {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
   background-position: 0 0;
   width: 475px;
   height: 67px;
 }
 
-.anime2 {
+#anime2 {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  -ms-opacity: 0;
+  -o-opacity: 0;
+  opacity: 0;
   background-position: 0 -68px;
   width: 485px;
   height: 63px;
