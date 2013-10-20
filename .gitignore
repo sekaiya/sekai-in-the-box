@@ -1,5 +1,4 @@
 
 .sass-cache/
 push.rb
-push_deploy.bat
-deploy.bat
+mail.properties
