@@ -22,6 +22,10 @@ handlers:
 - url: /inc/(.*)
   static_files: com/inc/\1
   upload: com/inc/(.*)
+
+- url: /(.*\.html)
+  static_files: com/\1
+  upload: com/(.*\.html)
   
 - url: /.*
   script: com/index.php
