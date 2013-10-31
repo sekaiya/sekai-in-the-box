@@ -23,9 +23,13 @@ handlers:
   static_files: com/inc/\1
   upload: com/inc/(.*)
 
-- url: /(.*\.html)
+- url: /((iseer|kimono)\.html)
   static_files: com/\1
   upload: com/(.*\.html)
   
-- url: /.*
+- url: /
   script: com/index.php
+
+- url: /.*
+  static_files: com/notfound.html
+  upload: com/notfound.html
