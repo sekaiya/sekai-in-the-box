@@ -5,6 +5,7 @@ pause
 exit
 )
 echo "SUCCESS: comment check"
+echo "SUCCESS: show status check"
 FOR /F "delims=" %%a IN (mail.properties) DO (
    set MAIL=%%a
 )
