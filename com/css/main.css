@@ -163,3 +163,11 @@ history ul url {
   position: absolute;
   z-index: -1;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #00617f;
+}
