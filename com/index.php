@@ -19,12 +19,12 @@
 			<div class="menufont" id="menus">
 				<ul>
 					<li id="about">about</li>
-					<li id="interview" class="subs">interview</li>
+					<li id="interview">interview</li>
 					<ul style="display:none;" class="submenu">
 						<li id="interview/no1">"kanpeki" ?</li>
 						<li id="interview/no2">what is this ?</li>
 					</ul>
-					<li id="works" class="subs">works!</li>
+					<li id="works">works!</li>
 					<ul style="display:none;" class="submenu">
 						<li id="works/sekai">Hello Sekai!</li>
 						<li id="works/iena">IENA</li>
@@ -34,7 +34,7 @@
 						<li id="works/iro">iro-no-iroiro</li>
 						<li id="works/kimono">fushigi-kissa Kimono</li>
 					</ul>
-					<li id="links" class="subs">links</li>
+					<li id="links">links</li>
 					<li id="contact">contact</li>
 					<li id="history">history</li>
 				</ul>

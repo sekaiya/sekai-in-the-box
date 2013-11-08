@@ -1,28 +1,15 @@
 jQuery(document).ready(function() {
-	var left = $(window).width();
-	var top = $(window).height();
-
-	$("#hibi").css("left", left - 220 + "px");
-	$("#hibi").css("top", top - 100 + "px");
-	$("#menus > ul > li, #menus > ul > ul > *").click(function(){
+	$("#hibi").css("left", $(window).width() - 220 + "px");
+	$("#hibi").css("top", $(window).height() - 100 + "px");
+	var menus = $("#menus > ul > li, #menus > ul > ul > *")
+	menus.click(function(){
 		if($(this).css("color") == "rgb(255, 255, 255)") { return; }
 		$('html,body').animate({ scrollTop: 0 }, 'fast');
-		$("#menus > ul > li, #menus > ul > ul > *").css("color", "#00617f");
+		menus.css("color", "#00617f");
 		$(this).css("color", "#ffffff");
+		if(!$(this).is('#menus > ul > ul > *')){$(".submenu").hide("slow")};
+		if($(this).next().is('ul')){ $(this).next().toggle("slow");}
 		_make_content($(this).attr("id"));
-	});
-	
-	$("#menus > ul > li").click(function(){
-		if(!$(this).is('.subs')){
-			$(".submenu").hide("slow");
-			return;
-		}
-		if($(this).next().is(':visible')){
-			$(".submenu").hide("slow");
-			return;
-		}
-		$(".submenu").hide();
-		$(this).next().toggle("slow");
 	});
 	$.getJSON("https://api.github.com/repos/sekaiya/sekai-in-the-box/commits?per_page=5", function(res){
 		histories = new Array();
