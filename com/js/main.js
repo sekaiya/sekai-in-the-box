@@ -38,11 +38,9 @@ _make_content = function(pagename){
 	if(pagename == "history") {
 		_make_history_page();
 	} else {
-		$("#contents").load("inc/" + pagename + ".inc");
+		$("#contents").load("inc/" + pagename + ".inc",null,function(){if($("#contents").height() < 430) { $("#contents").height(430) }});
 	}
-	$("#contents").show("slow", function(){
-		if($("#contents").height() < 430) { $("#contents").height(430) }
-	});
+	$("#contents").fadeIn("slow");
 }
 
 _make_history_page = function() {
