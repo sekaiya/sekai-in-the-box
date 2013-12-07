@@ -1,3 +1,6 @@
+var hurl = window.location.hash;
+if(hurl!="" && $(hurl)[0]){$("#loadingWrap").remove();return};
+
 var left_a = ($(window).width()-500)/2
 var top_a = ($(window).height()-120)/2
 
