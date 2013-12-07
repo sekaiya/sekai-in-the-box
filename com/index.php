@@ -21,18 +21,18 @@
 					<li id="about">about</li>
 					<li id="interview">interview</li>
 					<ul style="display:none;" class="submenu">
-						<li id="interview/no1">"kanpeki" ?</li>
-						<li id="interview/no2">what is this ?</li>
+						<li id="interview_no1">"kanpeki" ?</li>
+						<li id="interview_no2">what is this ?</li>
 					</ul>
 					<li id="works">works!</li>
 					<ul style="display:none;" class="submenu">
-						<li id="works/sekai">Hello Sekai!</li>
-						<li id="works/iena">IENA</li>
-						<li id="works/exhibition_site">exhibition site</li>
-						<li id="works/iroironashi">Twitter Bot @iroironashi</li>
-						<li id="works/perfectphp">perfect-php</li>
-						<li id="works/iro">iro-no-iroiro</li>
-						<li id="works/kimono">fushigi-kissa Kimono</li>
+						<li id="works_sekai">Hello Sekai!</li>
+						<li id="works_iena">IENA</li>
+						<li id="works_exhibition_site">exhibition site</li>
+						<li id="works_iroironashi">Twitter Bot @iroironashi</li>
+						<li id="works_perfectphp">perfect-php</li>
+						<li id="works_iro">iro-no-iroiro</li>
+						<li id="works_kimono">fushigi-kissa Kimono</li>
 					</ul>
 					<li id="links">links</li>
 					<li id="contact">contact</li>
@@ -59,5 +59,3 @@
 
 
 <?php
-
-
