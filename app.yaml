@@ -1,5 +1,6 @@
 application: sekai-in-the-box
 version: __APP_VERSION__
+#version: dev-test
 runtime: php
 api_version: 1
 
@@ -29,6 +30,9 @@ handlers:
   
 - url: /
   script: com/index.php
+  
+- url: /(#.*)
+  script: com/index.php/\1
 
 - url: /.*
   static_files: com/notfound.html
