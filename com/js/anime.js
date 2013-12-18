@@ -3,7 +3,6 @@ if(hurl!="" && $(hurl)[0]){$("#loadingWrap").remove()}else{
 	var left_a = ($(window).width()-500)/2;
 	var top_a = ($(window).height()-120)/2;
 
-	not_anime_hide = function(){$(".notanime").hide();}
 	show = function(node){node.show();}
 	remove = function(node){node.remove();}
 	hide =  function(node){node.hide();}
