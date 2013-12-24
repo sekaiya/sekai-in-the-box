@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="sekai" content="https://github.com/sekaiya/sekai">
+		<meta name="sekai" content="https://github.com/sekaiya">
 		<title>sekai in the box!</title>
 		<link href="css/main.css" rel="stylesheet" type="text/css">
 		<link rel="shortcut icon" href="img/favicon.ico">

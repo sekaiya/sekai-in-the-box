@@ -2,3 +2,4 @@
 .sass-cache/
 push.rb
 mail.properties
+*.DS_Store
