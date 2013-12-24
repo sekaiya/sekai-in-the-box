@@ -1,6 +1,7 @@
 application: sekai-in-the-box
-version: __APP_VERSION__
+#version: __APP_VERSION__
 #version: dev-test
+version: ver001
 runtime: php
 api_version: 1
 
