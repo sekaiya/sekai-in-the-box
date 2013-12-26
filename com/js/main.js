@@ -10,7 +10,7 @@ jQuery(document).ready(function() {
 		if($(this).is('#menus > ul > ul > li')){$(this).parent().show("slow")};
 		_make_content($(this).attr("id"));
 	});
-	var hurl = window.location.hash;　//ex) "#interview" "#links"
+	var hurl = window.location.hash;  //ex) "#interview" "#links"
 	if(hurl!="" && $(hurl)[0]){$(hurl).trigger("click")};
 	$.getJSON("https://api.github.com/repos/sekaiya/sekai-in-the-box/commits?per_page=5", function(res){
 		histories = new Array();
