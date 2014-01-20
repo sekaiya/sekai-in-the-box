@@ -1,11 +1,10 @@
-@ECHO OFF
+#!/bin/sh
+
 ruby deploy.rb
-IF %ERRORLEVEL%==1 (
-pause
-exit
-)
+if [ $? = 1 ]
+then
+	exit
+fi
 echo "SUCCESS: comment check"
 echo "SUCCESS: page status check"
 echo "deploy done"
-
-pause
